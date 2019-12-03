@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TODO LIST</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+	<div class="div1">
+<input type="text" id="text1" placeholder="Enter text">
+<input type="button" id="btn" value="Click me">
+<ul id="para"></ul>
+</div>
+<script type="text/javascript">
+	var e=document.getElementById("text1")
+	var e1=document.getElementById("btn")
+	e1.addEventListener('click',testclick)
+	function testclick(){
+		var e2=document.getElementById("para")
+		var e3=document.createElement("li")
+		var e4=document.createElement("button")
+		e4.textContent="delete"
+		e3.textContent=e.value
+		e3.appendChild(e4)
+		e2.appendChild(e3)
+		e.value=""
+	}
+</script>
+</body>
+</html>
